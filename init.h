@@ -153,6 +153,7 @@ void greedy()
         if( item_conflict_times[cur_item] > 0 )
         {
             is_in_conflict_stack[cur_item] = 1;
+            index_in_conflict_stack[cur_item] = conflict_stack_count;
             PUSH(cur_item, conflict_stack);
         }      
     }

@@ -359,7 +359,7 @@ void flip(int flipitem)
             if( item_conflict_times[cur_item] == 0 )
             {
                 int last_conflict = POP(conflict_stack);
-                int index_for_last_conflict = index_in_conflict_stack[flipitem];
+                int index_for_last_conflict = index_in_conflict_stack[cur_item];
                 index_in_conflict_stack[last_conflict] = index_for_last_conflict;
                 conflict_stack[index_for_last_conflict] = last_conflict;
                 is_in_conflict_stack[cur_item] = 0;

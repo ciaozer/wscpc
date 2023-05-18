@@ -194,7 +194,7 @@ void build(char *filename)
         n_ele_count[i] = 0;  //重新计数
     }
 
-    for( int it=0; it<itemnum; it++ )
+    for( int it=1; it<=itemnum; it++ )
     {
         for( int ele=0; ele<m_item_count[it]; ele++ )
         {
